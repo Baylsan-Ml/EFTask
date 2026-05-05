@@ -11,8 +11,8 @@ namespace EFTask
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            //optionsBuilder.UseSqlServer("Server=.;Database=EFTask;Trusted_Connection=True;TrustServerCertificate=True");
-            optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=EFTask;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer("Server=.;Database=EFTask;Trusted_Connection=True;TrustServerCertificate=True");
+            //optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=EFTask;Trusted_Connection=True;");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
